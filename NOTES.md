@@ -1,2 +1,8 @@
+
+craig
 mrcraig
-password
+password@2025
+
+admin
+admin@test.com
+password@2025
