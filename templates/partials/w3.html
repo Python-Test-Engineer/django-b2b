@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Base template file" />
+  <meta name="keywords" content="instant web pages">
+  <meta name="robots" content="index" />
+  <!-- <meta http-equiv="cache-control" content="no-cache" /> -->
+  <meta http-equiv="expires" content="43200" />
+  <link rel="stylesheet" href="{% static 'css/w3-min.css' %}">
+  <link rel="stylesheet" href="css/site.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway'>
+  <link rel="preconnect" href='https://fonts.gstatic.com'>
+  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+  <title>Craig West | Python Test Engineer</title>
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;"
+    id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width:100%;font-size:22px">Close Menu</a>
+    <div class="w3-container">
+      <h3 class="w3-padding-16 w3-xxlarge w3-text-white"><b>Python</b></h3>
+    </div>
+    <div class="w3-bar-block">
+      <a href="index.html" onclick="w3_close()" class="w3-xlarge w3-bar-item w3-button w3-hover-white">Home</a>
+      <a href="#about" onclick="w3_close()" class="w3-xlarge w3-bar-item w3-button w3-hover-white">About</a>
+
+      <a href="#speaking" onclick="w3_close()" class="w3-xlarge w3-bar-item w3-button w3-hover-white">Speaking</a>
+      <a href="#portfolio" onclick="w3_close()" class="w3-xlarge w3-bar-item w3-button w3-hover-white">Portfolio</a>
+      <a href="#cv" onclick="w3_close()" class="w3-xlarge w3-bar-item w3-button w3-hover-white">CV</a>
+      <!-- <a href="cpd.html" onclick="w3_close()" class="w3-xlarge w3-bar-item w3-button w3-hover-white">CPD</a> -->
+      <hr>
+
+      <a href="mailto:craig@wpjs.co.uk" class="w3-xlarge w3-bar-item w3-button w3-hover-white">Email:
+        mrcraigwest@hotmail.com</a>
+    </div>
+  </nav>
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-xlarge w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Python</span>
+  </header>
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+    id="myOverlay"></div>
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:340px;margin-right:40px">
+    <!-- Header -->
+    <div class="w3-container" style="margin-top:60px" id="header">
+      <h1 class="w3-xxlarge w3-text-blue"><b>Python Test Engineer</b></h1>
+
+      <div id="about" class="spacer"></div>
+    </div>
+    <!-- About -->
+    <div class="w3-container">
+      <h1 class="w3-xxlarge w3-text-blue"><b>About Craig</b></h1>
+
+      <div>
+        <img src='./images/craig-west.jpg' style="width: 225px;height:175px;float:left;padding:0 20px;"
+          class="w3-circle" alt="Craig West" />
+
+        <p>I am a Python Test Engineer. I live in Brighton, UK.
+        </p>
+        <p>I have a background in Web based business applications, AI, ML, Django, Python,WordPress, JavaScript and
+          finance.</p>
+
+      </div>
+
+
+      <p>As a former Microsoft Certified DBA (SQL 2000), I have a strong interest in data integrity as well as using
+        browser storage (IndexedDB) for robust and fast data retrieval.</p>
+      <p>I originally trained as an Accountant Technician, working freelance for a range of SMEs. This
+        enables me
+        to speak both business and development, bridging the gap between these two worlds, leading to a role as a
+        Business Information Architect<span id="cv"></span> for a nationwide recycling
+        company. </p>
+      <p>At this time, I am developing a range of incrementally functional Test Suites with documentation, videos and
+        templates for
+        developers and testers - <a
+          href="https://github.com/Python-Test-Engineer/PYTHON-TESTING-FRAMEWORK"
+          target="_blank">Python Testing Framework</a>.</p>
+      <p>My <a href="https://github.com/Python-Test-Engineer" target="_blank">Github CV</a>.
+      </p>
+      <div class="spacer"></div>
+    </div>
+    <!-- Speaking -->
+    <div class="w3-container">
+      <h1 class="w3-xxlarge w3-text-blue"><b>Speaking</b></h1>
+
+      <p>I enjoy giving talks and workshops on WP-HTML, Web Components and Progressive Web Apps.</p>
+
+      <p>Talks previously given:</p>
+      <ol>
+        <li>TALK: Offline and instant websites, aka Progressive Web Apps - AsyncJS, Brighton, September
+          2021.</li>
+        <li>LIGHTNING TALK: WordPress as a Micro Service to any framework - WordFest, July 2021.</li>
+        <li>TALK: WP REST API and Web Components => 100% Internet - WordCamp Santa Clarita, July 2021.</li>
+        <li>TALK: Web Components in WP, Gutenberg and as HTML plugins. - WordCamp North East Ohio, May 2021.</li>
+        <li>TALK: Leveraging the power or the WordPress REST API - WP Leeds, April 2021</li>
+        <li>WORKSHOP: WP REST API and you -> Best Friends Forever - WordCamp Greece, April 2021.</li>
+        <li>TALK: Web Components as Micro Apps - NDC London, Jan 2021.</li>
+        <li>TALK: Unifying frameworks with Web Components - Brighton AsyncJS, Nov 2020.</li>
+        <li>WORKSHOP: Progressive Web Apps Workshop (2hrs) - NDC Oslo, June 2020.</li>
+        <li>WORKSHOP: Web Components Workshop (2hrs) - NDC Oslo, June 2020.</li>
+        <li>WORKSHOP: Progressive Web Apps Workshop (2hrs) - Brighton WordUp, June 2020.</li>
+        <li>WORKSHOP: WordPress REST API with AJAX Forms and Pages - WordCamp Denver, June 2020.</li>
+        <li>WORKSHOP: WordPress REST API with AJAX Forms and Pages - WordCamp Kent, Ohio May 2020.</li>
+        <li>WORKSHOP: What is the WP REST API and how can I use it to make forms and pages that don’t need to do be
+          reloaded? -
+          WordUp Brighton May 2020.</li>
+        <li>WORKSHOP: WordPress REST API and AJAX Forms - WordCamp Geneva, March 2020 [EVENT CANCELLED due to virus
+          concerns :( ]</li>
+        <li>TALK: WP-HTML: The marriage of WP and JS Frameworks for expansion, ubiquity and profit - WordCamp Vienna
+          February 2020.</li>
+        <li>WORKSHOP: WordPress REST API - WordCamp Vienna, February 2020.</li>
+        <li>TALK: Progressive Web Apps - Brighton WordUp, November 2019.</li>
+        <li>TALK: Decoupled WordPress (code along style) - WordCamp Dublin, October 2019.</li>
+        <li>TALK: JWT and Authentication - WPHooked London, September 2019</li>
+        <li id="portfolio">TALK: Decoupled WordPress and WP Components - WordCamp Brighton, August 2019.</li>
+      </ol>
+      <div class="spacer"></div>
+    </div>
+    <!-- Portfolio -->
+    <div class="w3-container">
+      <h1 class="w3-xxlarge w3-text-blue"><b>Portfolio</b></h1>
+
+      <ol>
+        <li><a href="https://wp-html.co.uk/wp-rest-api" target="blank">WordPress REST API and AJAX Forms and Pages</a>
+          opens up the possibility of WP being used 100% of the Internet, a topic I have spoken about at WordCamps
+          and used in non-WP talks and workshops. I created an online course on creating REST APIs for pages and
+          forms that do not need to be refreshed for commercial reasons as well as being able to offer a free
+          resource to attendees at WordCamp workshops.
+        </li>
+        <li><a href="https://wp-html.co.uk" target="_blank">WP-HTML</a> creates Custom HTML tags, (Web Components)
+          that are part of the browser specifications. They have two powerful characteristics:
+          <p>1). They are fully
+            encapsulated preventing bleeding out of CSS and JS, as well as having protocols for passing CSS and
+            functionality between them and the web page. 2). Attributes in the the Custom HTML tag can be configured
+            to
+            be 'watched', so that when we change them programatically, they create a rerender of the tag.</p>
+          <p>
+            This site has a variety of Custom HTML tags, in a headless WordPress site. Combined with added
+            functionality of using the Intersection Observer API, (lazy loading), and IndexedDB,( the browser's own
+            database), to store posts locally
+            for offline and near instant access, we can create a WP site that has all the modern day power of JS
+            Frameworks, yet code
+            our page <em>semantically</em>.
+          </p>
+          <p>By making use of certain events in the browser like page loaded or teh Browser Idel API, we can manage
+            our local database of posts so that data is accessed locally rather than through network requests.
+            Additionaly. the use of a Service Worker JS file, we can create a local web server, as it were, to
+            increase our offline and near instant page load.</p>
+        </li>
+        <li><a href="https://wp-html.co.uk/plugin-boilerplate" target="_blank">WP Plugin Boilerplate</a>
+          <p>
+            This is a YouTube video series with GitHub repo and pdf guide to set up the WordPress Plugin Boilerplate
+            along
+            with the following included in the app:
+          <ol>
+            <li>Create admin pages links.</li>
+            <li>Create a custom MySQL table and have some pre-made CRUD operations.</li>
+            <li>Create a REST API. (I have an online course <em>'WP REST API for AJAX pages and forms'</em>, that is
+              also given
+              to attendees at WordCamp and MeetUp workshops and talks.)</li>
+            <li>Create an admin form with image uploader that uses the REST API and WP-Nonce for security to upload
+              events
+              to
+              the custom
+              MySQL table.</li>
+            <li>Admin list pages of events with edit and delete facilities using REST API.</li>
+            <li>Creating of blank pages as a placeholder for demo JS, React and Svelte apps, using
+              page_template_filter to
+              have the HTML
+              within the plugin rather than a custom page, thereby making the plugin and its pages self-contained.
+            </li>
+
+          </ol>
+          </p>
+        </li>
+        <!-- 
+          <li><a href="https://3dwp.co.uk/wordpress-in-3d/" target="_blank">3Dwp.co.uk</a> is a project that showcases
+            WP as a 3D
+            site,
+            either by using 3D CSS effects to create depth or by using libraries such as THREE.js which give the user
+            the ability to move within the page. It also includes 2D animations using vanilla JS and libaries such as
+            GSAP and Anime.js.</li> -->
+        <li><a href="https://wp-forms.co.uk" target="blank">wp-forms.co.uk</a>
+          Forms are a converstation with users. The base form has live validation, AJAX requests and error
+          handling and styling. Use of other JS libraries such as RxJS Streams, React, and Svelte are also used to
+          give the best
+          possible user and developer experience.
+        </li>
+        <li><a href=" https://github.com/iwswordpress#published-udemy-courses" target="_blank">Online
+            Courses</a> lists
+          a number of courses on
+          Udemy, (PWA or Offline Websites, WP REST API for AJAX Forms and Pages) as well as Web Components on YouTube.
+        </li>
+
+      </ol>
+      </p>
+
+      <div class="spacer"></div>
+    </div>
+
+
+    <!-- End page content -->
+  </div>
+  <!-- Footer -->
+  <div class="w3-light-grey w3-container w3-padding" style="margin-top:25px;padding-right:8px">
+    <p class="w3-center">
+      Email: <a href="mailto:mrcraigwest@hotmail.com">mrcraigwest@hotmail.com</a>
+    </p>
+  </div>
+  <script src="js/back-to-top.js" defer></script>
+  <back-to-top></back-to-top>
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Base template file" />
+    <meta name="keywords" content="instant web pages">
+    <meta name="robots" content="index" />
+    <!-- <meta http-equiv="cache-control" content="no-cache" /> -->
+    <meta http-equiv="expires" content="43200" />
+    <link rel="stylesheet" href="{% static 'css/w3-min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/site.css' %}">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway'>
+    <link rel="preconnect" href='https://fonts.gstatic.com'>
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+    <title>Django B2B</title>
+</head>
+
+<body>
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding"
+        style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+            style="width:100%;font-size:22px">Close Menu</a>
+        <div class="w3-container">
+            <h3 class="w3-padding-16 w3-xxlarge w3-text-white"><b>B2B</b></h3>
+        </div>
+        <div class="w3-bar-block">
+            <a href="index.html" onclick="w3_close()" class="w3-xlarge w3-bar-item w3-button w3-hover-white">Home</a>
+            <a href="#about" onclick="w3_close()" class="w3-xlarge w3-bar-item w3-button w3-hover-white">About</a>
+
+            <a href="#speaking" onclick="w3_close()" class="w3-xlarge w3-bar-item w3-button w3-hover-white">Speaking</a>
+            <a href="#portfolio" onclick="w3_close()"
+                class="w3-xlarge w3-bar-item w3-button w3-hover-white">Portfolio</a>
+            <a href="#cv" onclick="w3_close()" class="w3-xlarge w3-bar-item w3-button w3-hover-white">CV</a>
+            <!-- <a href="cpd.html" onclick="w3_close()" class="w3-xlarge w3-bar-item w3-button w3-hover-white">CPD</a> -->
+            <hr>
+
+            <a href="mailto:craig@wpjs.co.uk" class="w3-large w3-bar-item w3-button w3-hover-white">Email:
+                mrcraigwest@hotmail.com</a>
+        </div>
+    </nav>
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-xlarge w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
+        <span>B2B</span>
+    </header>
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+        id="myOverlay"></div>
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
+        <!-- Header -->
+        <div class="w3-container" style="margin-top:60px" id="header">
+            <h1 class="w3-xxlarge w3-text-blue"><b>A Test site for B2B</b></h1>
+
+            <div id="about" class="spacer"></div>
+        </div>
+
+        {% block content %}
+
+
+        {% endblock %}
+        <!-- End page content -->
+    </div>
+
+    <!-- Footer -->
+    <div class="w3-light-grey w3-container w3-padding" style="margin-top:25px;padding-right:8px">
+        <p class="w3-center">
+            Email: <a href="mailto:mrcraigwest@hotmail.com">mrcraigwest@hotmail.com</a>
+        </p>
+    </div>
+    <script src="{% 'js/back-to-top.js %''}" defer></script>
+    <back-to-top></back-to-top>
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
