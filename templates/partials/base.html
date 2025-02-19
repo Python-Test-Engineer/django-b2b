@@ -1,5 +1,6 @@
 {% load static %}
 
+<script src="{% static 'htmx.min.js' %}" defer></script>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,12 +31,15 @@
             <h3 class="w3-padding-16 w3-xxlarge w3-text-white"><b>B2B</b></h3>
         </div>
         <div class="w3-bar-block">
-            <a href="index.html" onclick="w3_close()" class="w3-xlarge w3-bar-item w3-button w3-hover-white">Home</a>
-            <a href="#about" onclick="w3_close()" class="w3-xlarge w3-bar-item w3-button w3-hover-white">About</a>
+            <a href="http://127.0.0.1:8000/" onclick="w3_close()"
+                class="w3-xlarge w3-bar-item w3-button w3-hover-white">HOME</a>
+            <a href="http://127.0.0.1:8000/core/" onclick="w3_close()"
+                class="w3-xlarge w3-bar-item w3-button w3-hover-white">CORE</a>
 
-            <a href="#speaking" onclick="w3_close()" class="w3-xlarge w3-bar-item w3-button w3-hover-white">Speaking</a>
-            <a href="#portfolio" onclick="w3_close()"
-                class="w3-xlarge w3-bar-item w3-button w3-hover-white">Portfolio</a>
+            <a href="http://127.0.0.1:8000/products/" onclick="w3_close()"
+                class="w3-xlarge w3-bar-item w3-button w3-hover-white">PRODUCTS</a>
+            <a href="http://127.0.0.1:8000/htmx/" onclick="w3_close()"
+                class="w3-xlarge w3-bar-item w3-button w3-hover-white">HTMX</a>
             <a href="#cv" onclick="w3_close()" class="w3-xlarge w3-bar-item w3-button w3-hover-white">CV</a>
             <!-- <a href="cpd.html" onclick="w3_close()" class="w3-xlarge w3-bar-item w3-button w3-hover-white">CPD</a> -->
             <hr>
@@ -56,7 +60,7 @@
     <div class="w3-main" style="margin-left:340px;margin-right:40px">
         <!-- Header -->
         <div class="w3-container" style="margin-top:60px" id="header">
-            <h1 class="w3-xxlarge w3-text-blue"><b>A Test site for B2B</b></h1>
+            <h1 class="w3-xxlarge w3-text-blue"><b>Base Template</b></h1>
 
             <div id="about" class="spacer"></div>
         </div>

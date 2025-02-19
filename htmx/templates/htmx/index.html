@@ -1,0 +1,21 @@
+{% extends "partials/base.html" %}
+{% load static %}
+{% block content %}
+<div class="w3-container">
+   <!-- pages -->
+
+   <h1 class="w3-xxlarge w3-text-blue"><b>HTMX</b></h1>
+
+   <div>
+      <img src='{% static "images/htmx/htmx.png" %}' style="width: 225px;
+padding:0 20px;" class="w3-circle" alt="HTMX" />
+
+   </div>
+   <div>
+      <a hx-get="{% url 'htmx:index'  %}" hx-target="#output"> Test HTMX</a>
+   </div>
+   <div id="output" style="margin-top:30px; border: 2px solid blue; padding:10px; border-radius: 10px;">OUTPUT</div>
+</div>
+
+
+{% endblock content %}

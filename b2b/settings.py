@@ -21,7 +21,9 @@ INSTALLED_APPS = [
     "core.apps.CoreConfig",
     "userauths.apps.UserauthsConfig",
     "products.apps.ProductsConfig",
+    "htmx.apps.HtmxConfig",
     "django_extensions",
+    "django_htmx",
 ]
 
 MIDDLEWARE = [
@@ -32,6 +34,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "django_htmx.middleware.HtmxMiddleware",
 ]
 
 ROOT_URLCONF = "b2b.urls"
