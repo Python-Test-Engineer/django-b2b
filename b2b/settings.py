@@ -6,9 +6,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = "django-insecure-^&6eeh@mh96al9mq1(z73%vs+(6k^o@%1ppoe-3bc&y@xpmg7b"
 
-DEBUG = True
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "django-b2b.onrender.com",
+    "127.0.0.1",
+    "localhost",
+]
+
+CSRF_TRUSTED_ORIGINS = ["https://django-b2b.onrender.com"]
 
 INSTALLED_APPS = [
     "jazzmin",
