@@ -31,21 +31,18 @@
             <h3 class="w3-padding-16 w3-xxlarge w3-text-white"><b>B2B</b></h3>
         </div>
         <div class="w3-bar-block">
-            <a href="http://127.0.0.1:8000/" onclick="w3_close()"
+            <a href="{% url 'core:index' %}" onclick="w3_close()"
                 class="w3-xlarge w3-bar-item w3-button w3-hover-white">HOME</a>
-            <a href="http://127.0.0.1:8000/core/" onclick="w3_close()"
+            <a href="{% url 'core:index' %}" onclick="w3_close()"
                 class="w3-xlarge w3-bar-item w3-button w3-hover-white">CORE</a>
 
-            <a href="http://127.0.0.1:8000/products/" onclick="w3_close()"
+            <a href="{% url 'products:index' %}" onclick="w3_close()"
                 class="w3-xlarge w3-bar-item w3-button w3-hover-white">PRODUCTS</a>
-            <a href="http://127.0.0.1:8000/htmx/" onclick="w3_close()"
+            <a href="{% url 'htmx:index' %}" onclick="w3_close()"
                 class="w3-xlarge w3-bar-item w3-button w3-hover-white">HTMX</a>
-            <a href="#cv" onclick="w3_close()" class="w3-xlarge w3-bar-item w3-button w3-hover-white">CV</a>
-            <!-- <a href="cpd.html" onclick="w3_close()" class="w3-xlarge w3-bar-item w3-button w3-hover-white">CPD</a> -->
             <hr>
 
-            <!-- <a href="mailto:craig@wpjs.co.uk" class="w3-large w3-bar-item w3-button w3-hover-white">Email:
-                mrcraigwest@hotmail.com</a> -->
+
         </div>
     </nav>
     <!-- Top menu on small screens -->
